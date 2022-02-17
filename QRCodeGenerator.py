@@ -15,7 +15,6 @@
 # 	- Create a demo of your program (1-2 min) and send it directly to my messenger
 
 import qrcode
-from PIL import Image
 
 encode = qrcode.QRCode(
     box_size = 6,
@@ -24,7 +23,7 @@ encode = qrcode.QRCode(
     error_correction = qrcode.constants.ERROR_CORRECT_H 
 )
 
-info = """ Student Information
+information = """ Student Information
 
 Personal Information
 	Name		: Jezell C. Domer
@@ -53,7 +52,7 @@ Hobbies:
 
 Recommended Must-Watch: https://www.youtube.com/watch?v=fYZSl2Yro-Q"""
 
-encode.add_data(info)
+encode.add_data(information)
 encode.make(fit = True); icon = encode.make_image(back_color = 'white', fill_color = 'black').convert('RGB')
 
 icon.save('QR Code.png')
