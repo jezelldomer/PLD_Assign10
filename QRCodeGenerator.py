@@ -24,4 +24,32 @@ encode = qrcode.QRCode(
     error_correction = qrcode.constants.ERROR_CORRECT_H 
 )
 
+info = """ Student Information
+
+Personal Information
+	Name		: Jezell C. Domer
+	Nickname(s)	: Seng, Kang, Berry, Jez
+	Section		: BSCOE 1-6
+	Gender		: Female
+	Age			: 18 Years Old (19 this year)
+	Birthday	: April 18, 2003
+	Location	: Luzon, Philippines
+	Phone Number: 09123456789
+	School: Polytechnic University of the Philippines
+	Course: Bachelor of Science in Computer Engineering
+	E-mail: brrybrry671@gmail.com
+
+Motto in Life
+	Motto: Stop thinking others should love you first when you can already start loving and fighting for yourself. 
+	Favorite Bible Verse: Psalm 144:15 Happy are the people whose God is the LORD!
+
+Like(s)
+	K-POP: BTS, TXT, ENHYPEN, STRAY KIDS, ASTRO, GOT7, EXO, CRAVITY
+		   TWICE, BLACKPINK, AESPA, ITZY, FROMIS_9, KEP1ER, SNSD, RED VELVET
+	Food: Chocolate, Strawberry, Chicken, Burger, Ampalaya, Adobo, French Fries
+
+Hobbies:
+	Watching Youtube, Dramas (K-drama and C-drama), Reading Wattpad Stories, Chatting with friends in Social Media (Facebook, Messenger, Twitter, Instagram, Discord)
+
+Recommended Must-Watch: https://www.youtube.com/watch?v=fYZSl2Yro-Q"""
 
