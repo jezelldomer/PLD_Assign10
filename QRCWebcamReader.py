@@ -14,7 +14,6 @@
 # 	- Your source code should be in github before Feb 19
 # 	- Create a demo of your program (1-2 min) and send it directly to my messenger
 
-import webbrowser
 import cv2
 # Installed pip openCv for cv2
 
@@ -40,4 +39,20 @@ def time_(icon):
 
 information = "Student_Information.txt"
 
+def webcamExtract():    
+    cap = cv2.VideoCapture(0)
+    detector = cv2.QRCodeDetector()
+    while True:
+        _, img = cap.read()
+        data, bbox, _ = detector.detectAndDecode(img)
+        if data:
+            a=data
+            break 
+        cv2.imshow("QRCODEscanner", img)    
+        if cv2.waitKey(1) == ord("q"):
+            break
+  
+    cap.release()
+    cv2.destroyAllWindows()
 
+webcamExtract() 
