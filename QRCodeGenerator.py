@@ -53,3 +53,7 @@ Hobbies:
 
 Recommended Must-Watch: https://www.youtube.com/watch?v=fYZSl2Yro-Q"""
 
+encode.add_data(info)
+encode.make(fit = True); icon = encode.make_image(back_color = 'white', fill_color = 'black').convert('RGB')
+
+icon.save('QR Code.png')
