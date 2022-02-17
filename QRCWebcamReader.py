@@ -28,3 +28,16 @@ def time_(icon):
     current_time = time.localtime() 
     timezone = time.strftime("%H:%M", current_time) 
     timezoneNUM = int(time.strftime("%H", current_time)) 
+    timezoneDate = time.strftime("%M", current_time) 
+    hour_clock = 12
+    with open(information, "w") as update:
+        if timezoneNUM >= 0 and timezoneNUM < hour_clock:
+            update.write (f"\n\n>>> REAL-TIME MANAGEMENT SYSTEM <<< \nDate Recorded: {datezone}\nTime Recorded: {timezone} AM")
+        else:
+            timeCurrent = (timezoneNUM) - hour_clock
+            update.write (f"\n\n>>> REAL-TIME MANAGEMENT SYSTEM <<< \nDate Recorded: {datezone}\nTime Recorded: {timeCurrent}:{timezoneDate} PM")
+    return icon; 
+
+information = "Student_Information.txt"
+
+
